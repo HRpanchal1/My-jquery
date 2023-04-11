@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>wrapInner demo</title>
+  <style>
+  p {
+    background: #9f9;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+  <h1>The jQuery wrapInner() method is used to wrap an HTML structure around the content of each element in the set of matched element. This method can accept any string or object that could be passed to the $() factory function. Syntax: $(selector). wrapInner(wrappingElement,function(index))</h1>
+ 
+<p>Hello <i>World</i> </p>
+<p>cruel</p>
+<p>World</p>
+ 
+<script>
+$( "p" ).wrapInner( document.createElement( "b" ) );
+</script>
+ 
+</body>
+</html>

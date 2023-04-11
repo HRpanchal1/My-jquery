@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>before demo</title>
+  <style>
+  p {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+
+  <h1>jQuery before() Method</h1>
+  <P>
+    The before() method inserts specified content in front of (before) the selected elements. Tip: To insert content after selected elements, use the after() method.
+  </P>
+
+  
+<p> is what I said...</p><b>Hello</b>
+ 
+<script>
+$( "p" ).before( $( "b" ) );
+</script>
+ 
+</body>
+</html>

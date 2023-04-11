@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>position demo</title>
+  <style>
+  div {
+    padding: 15px;
+  }
+  p {
+    margin-left: 10px;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+  <h1>jQuery position() Method</h1>
+  <p>The position() method returns the position (relative to its parent element) of the first matched element. This method returns an object with 2 properties; the top and left positions in pixels.</p>
+ 
+<div>
+  <p>Hello</p>
+</div>
+<p></p>
+ 
+<script>
+var p = $( "p" ).first();
+var position = p.position();
+$( "p" ).last().text( "left: " + position.left + ", top: " + position.top );
+</script>
+ 
+</body>
+</html>

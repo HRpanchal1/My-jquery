@@ -1,0 +1,46 @@
+<!-- Get the current computed inner height (including padding but not border) for the first element in the set of matched elements or set the inner height of every matched element. 
+This method returns the height of the element, including top and bottom padding, in pixels. If called on an empty set of elements, returns undefined (null before jQuery 3.0).
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>innerHeight demo</title>
+  <style>
+div {
+  width: 60px;
+  padding: 10px;
+  height: 70px;
+  float: left;
+  margin: 5px;
+  background: red;
+  cursor: pointer;
+}
+.mod {
+  background: blue;
+  cursor: default;
+}
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+
+  <H1>What is innerWidth and inner height?</H1>
+  <P>The innerWidth property returns the inner width of a window's content area. The innerHeight property returns the inner height of a window's content area. These properties are read-only. Tip: Use the outerWidth and outerHeight properties to get the width/height with toolbars/scrollbars.</P>
+ 
+<div>d</div>
+<div>d</div>
+<div>d</div>
+<div>d</div>
+<div>d</div>
+ 
+<script>
+var modHeight = 70;
+$( "div" ).one( "click", function() {
+  $( this ).innerHeight( modHeight ).addClass( "mod" );
+  modHeight -= 8;
+});
+</script>
+ 
+</body>
+</html>

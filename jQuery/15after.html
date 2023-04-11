@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>after demo</title>
+  <style>
+  p {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ 
+  <h1>jQuery after() Method</h1>
+  <p>The after() method inserts specified content after the selected elements. Tip: To insert content before selected elements, use the before() method.</p>
+  <p>I would like to say: </p>
+ 
+<script>
+$( "p" ).after( document.createTextNode( "Hello" ) );
+</script>
+ 
+</body>
+</html>

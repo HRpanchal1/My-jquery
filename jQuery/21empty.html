@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>empty demo</title>
+  <style>
+  p {
+    background: yellow;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+ <h1>What is the use of empty in jQuery?</h1>
+
+ <p>
+  The empty() method removes all child nodes and content from the selected elements. Note: This method does not remove the element itself, or its attributes. Tip: To remove the elements without removing data and events, use the detach() method. Tip: To remove the elements and its data and events, use the remove() method.</p>
+
+  
+<p>
+  Hello, <span>Person</span> <em>and person</em>.
+</p>
+ 
+<button>Call empty() on above paragraph</button>
+ 
+<script>
+$( "button" ).click(function() {
+  $( "p" ).empty();
+});
+</script>
+ 
+</body>
+</html>
